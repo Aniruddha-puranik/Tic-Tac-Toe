@@ -2,19 +2,17 @@ import React, { useRef, useState } from "react";
 import "./TicTacToe.css";
 
 //images
-import circle_icon from "../assets/circle.png"
-import cross_icon from "../assets/cross.png"
 import circle_icon2 from "../assets/circle2.png"
 import cross_icon2 from "../assets/cross2.png"
 
 let data = ["", "", "", "", "", "", "", "", ""];
 
-
+//main function
 export default function TicTacToe() {
     
     let [count, setcount] = useState(0);
     let [lock, setlock] = useState(false);
-    let titleRef = useRef(null);
+    let titleRef = useRef(null);  
     let box1 = useRef(null);
     let box2 = useRef(null);
     let box3 = useRef(null);
